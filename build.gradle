@@ -47,3 +47,9 @@ task assembleWeb(type: Sync) {
 }
 
 assemble.dependsOn assembleWeb
+
+kotlin {
+    experimental {
+        coroutines "enable"
+    }
+}
